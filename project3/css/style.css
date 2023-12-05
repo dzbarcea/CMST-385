@@ -6,6 +6,7 @@
 }
 
 body {
+    margin: 0;
     background-color: #171718;
     color: var(--text-color);
     font-family: var(--font-family);
@@ -13,10 +14,6 @@ body {
 
 header {
     margin-bottom: 5vh;
-}
-
-footer {
-
 }
 
 h1 {
@@ -48,6 +45,9 @@ h4 {
 }
 
 p {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 1rem 0;
 }
 
 ul {
