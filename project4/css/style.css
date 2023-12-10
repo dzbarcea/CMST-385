@@ -1,0 +1,14 @@
+
+:root {
+    /* COLOR VARIABLES */
+    --background-color: #0B0A09;
+    --text-color: #F6F2E3;
+    --primary-color: #C6484B;
+    --secondary-color: #71B4AE;
+
+    /* TEXT VARIABLES */
+}
+
+body {
+    font-family: Garamond, Arial, sans-serif;
+}
