@@ -6,9 +6,53 @@
     --primary-color: #C6484B;
     --secondary-color: #71B4AE;
 
-    /* TEXT VARIABLES */
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     font-family: Garamond, Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+
+    margin: 0;
+    height: 100%;
+}
+
+/* TEXT STYLES */
+h1 {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    padding: 0 150px;
+    align-items: center;
+    gap: 60px;
+    flex: 1 0 0;
 }
