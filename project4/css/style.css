@@ -31,14 +31,14 @@ h1 {
 
 h2 {
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin: 0;
 }
 
 h3 {
-
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
 }
 
 p {
@@ -64,7 +64,11 @@ a:hover {
 }
 
 .project-preview {
-    
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
 .wrapper {
