@@ -37,13 +37,30 @@ h3 {
 }
 
 p {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    /* TODO: ANIMATE HERE */
 }
 
 
 .wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     padding: 40px;
     height: 100%;
@@ -52,7 +69,31 @@ p {
 .container {
     display: flex;
     padding: 0 150px;
+    max-width: 80vw;
     align-items: center;
     gap: 60px;
     flex: 1 0 0;
+}
+
+.side-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    font-size: 32px;
+    text-align: right;
+}
+
+.active {
+    color: var(--primary-color);
+    cursor: default;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
