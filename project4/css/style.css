@@ -9,6 +9,10 @@
     height: 100%;
 }
 
+::selection {
+    background: var(--secondary-color);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -63,6 +67,29 @@ a:hover {
     color: var(--primary-color);
 }
 
+#skills-table {
+    border: 0 solid transparent;
+
+}
+
+#skills-table th {
+    counter-set: item;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+#skills-table th h3::after {
+    content: ':';
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
 .project-preview {
     display: flex;
     align-items: flex-start;
@@ -70,6 +97,27 @@ a:hover {
     flex: 1 0 0;
     align-self: stretch;
 }
+
+.image-container {
+    position: relative;
+    float: left;
+}
+
+.image-container:hover .image-original{
+    filter: brightness(50%);
+}
+
+.image-container .image-hover {
+    position: absolute;
+    left: calc(50% - 24px);
+    top: calc(50% - 24px);
+    display: none;
+}
+
+.image-container:hover .image-hover {
+    display: block;
+}
+
 
 .wrapper {
     display: flex;
@@ -108,6 +156,56 @@ a:hover {
 .active {
     color: var(--primary-color);
     cursor: default;
+}
+
+.arrow-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: padding-right 0.3s ease;
+}
+
+.arrow-link::after {
+    content: '\2192';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.arrow-link:hover {
+    padding-right: 40px;
+}
+
+.arrow-link:hover::after {
+    opacity: 1;
+}
+
+.static-arrow-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 20px;
+    transition: padding-right 0.3s ease;
+}
+
+.static-arrow-link::after {
+    content: '\2192';
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.static-arrow-link:hover {
+    padding-right: 40px;
+}
+
+.static-arrow-link:hover::after {
+    opacity: 1;
 }
 
 #hero-section {
