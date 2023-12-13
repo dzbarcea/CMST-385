@@ -53,8 +53,10 @@ p {
     margin: 0;
 }
 
-ul {
+ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -95,7 +97,6 @@ a:hover {
     align-items: flex-start;
     gap: 40px;
     flex: 1 0 0;
-    align-self: stretch;
 }
 
 .image-container {
@@ -137,9 +138,10 @@ a:hover {
 
 .container {
     display: flex;
-    padding: 0 150px;
+    padding: 150px;
+    height: 100%;
     max-width: 80vw;
-    align-items: center;
+    align-items: stretch;
     gap: 60px;
     flex: 1 0 0;
 }
@@ -214,14 +216,23 @@ a:hover {
     align-items: flex-end;
     gap: 40px;
     flex: 1 0 0;
-    align-self: stretch;
 }
 
-.vertical-section {
+.tech-stack li {
+    padding: 10px 0;
+}
+
+.vertical {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     flex: 1 0 0;
-    align-self: stretch;
+}
+
+.horizontal {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
 }
